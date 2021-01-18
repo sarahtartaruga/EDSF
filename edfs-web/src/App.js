@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import AppMarkdown from "./EDSF.wiki/Home.md";
+import ReactMarkdown from "react-markdown";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { markdown: "" };
+  }
+
+  componentWillMount() {
+    // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
+    fetch(AppMarkdown)
+      .then((res) => res.text())
+      .then((text) => this.setState({ markdown: text }));
+  }
+
+  render() {
+    const { markdown } = this.state;
+    return <ReactMarkdown source={markdown} />;
+  }
 }
 
 export default App;
