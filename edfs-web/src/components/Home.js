@@ -1,7 +1,6 @@
-import "./App.css";
 import React, { Component } from "react";
-import AppMarkdown from "./EDSF.wiki/Home.md";
 import ReactMarkdown from "react-markdown";
+import EdsfMarkdown from "../EDSF.wiki/EDSFhome.md";
 
 class App extends Component {
   constructor() {
@@ -11,14 +10,14 @@ class App extends Component {
 
   componentWillMount() {
     // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
-    fetch(AppMarkdown)
+    fetch(EdsfMarkdown)
       .then((res) => res.text())
       .then((text) => this.setState({ markdown: text }));
   }
 
   render() {
     const { markdown } = this.state;
-    return <ReactMarkdown source={markdown} />;
+    return <ReactMarkdown source={markdown} className="home-body" />;
   }
 }
 

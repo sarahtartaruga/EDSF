@@ -1,4 +1,23 @@
-Web version for the EDSF Wiki 
+# Web development for the EDSF Wiki
+
+This repository holds a React application, rendering the loosely coupled [EDSF Wiki repository](https://github.com/EDISONcommunity/EDSF.wiki.git) into a user-friendly web application, hosted via `GitHub Pages`.
+
+This application only pulls content from the [EDSF Wiki](https://github.com/EDISONcommunity/EDSF.wiki.git) for rendering into a user-friendly version. It is not intended to push new content to the [EDSF Wiki](https://github.com/EDISONcommunity/EDSF.wiki.git) from this repository (although possible).
+
+For deploying the web page and updating its contents, follow 2 steps: 
+
+### Step 1: 
+
+Fetch and update contents from the [EDSF Wiki repository](https://github.com/EDISONcommunity/EDSF.wiki.git): 
+ #### `git submodule update --init --recursive`
+
+ ### Step 2:
+
+ Refresh GitHub Page by deploying build to branch `gh-pages`: 
+ #### `cd edfs-web/src` 
+ `npm run deploy` 
+
+ For changing the UI, edit the JS files in `edfs-web/src/components`, images in `edfs-web/src/images` and styles in `edfs-web/src/css`. 
 
 # Getting Started with Create React App
 
