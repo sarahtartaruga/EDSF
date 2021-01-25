@@ -1,29 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavigationBar(props) {
   var res = [];
   var itemsTop = [];
   var itemsBottom = [];
+  var maxItemsPerRow = 6;
+
+  const Symbol = <sub className="nav-symbol"> | </sub>;
 
   props.categories.forEach(function (item, i) {
-    if (i < 6) {
+    if (i < maxItemsPerRow) {
       itemsTop.push(
-        <Link to={props.categories_path[i]} className="nav-item">
+        <NavLink exact
+          to={props.categories_path[i]}
+          className="nav-item"
+          activeClassName="active"
+        >
           {item}
-        </Link>
+        </NavLink>
       );
+      if (i < maxItemsPerRow - 1) {
+        itemsTop.push(Symbol);
+      }
     } else {
       itemsBottom.push(
-        <Link to={props.categories_path[i]} className="nav-item">
+        <NavLink exact
+          to={props.categories_path[i]}
+          className="nav-item"
+          activeClassName="active"
+        >
           {item}
-        </Link>
+        </NavLink>
       );
+      if (i < props.categories.length - 1) {
+        itemsBottom.push(Symbol);
+      }
     }
   });
 
-  res.push(<div className="nav-wrapper-top">{itemsTop}</div>);
-  res.push(<div className="nav-wrapper-bottom">{itemsBottom}</div>);
+  res.push(<nav className="nav-wrapper-top">{itemsTop}</nav>);
+  res.push(<nav className="nav-wrapper-bottom">{itemsBottom}</nav>);
 
   return <div className="nav-wrapper">{res}</div>;
 }
