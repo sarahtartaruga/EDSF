@@ -10,7 +10,7 @@ class Page extends Component {
     this.edsfMarkdown = this.props.edsfMarkdown;
   }
 
-  componentWillMount() {
+  componentDidMount() {
     // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
     fetch(this.edsfMarkdown)
       .then((res) => res.text())

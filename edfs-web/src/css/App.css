@@ -119,11 +119,11 @@ a {
 .nav-item {
   white-space: nowrap;
   text-decoration: none;
-  font-size: calc(2px + 2vmin);
+  font-size: calc(1px + 2vmin);
   color: #617d8a;
   font-weight: normal;
   padding: 1%;
-  border: lightgrey;
+  border: white;
   border-width: 1px;
   border-style: solid;
 }
