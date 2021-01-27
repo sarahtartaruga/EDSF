@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/EDSF/static/css/main.bbb70e15.chunk.css",
-    "main.js": "/EDSF/static/js/main.16ab4868.chunk.js",
-    "main.js.map": "/EDSF/static/js/main.16ab4868.chunk.js.map",
+    "main.css": "/EDSF/static/css/main.66b253b7.chunk.css",
+    "main.js": "/EDSF/static/js/main.2d38a90b.chunk.js",
+    "main.js.map": "/EDSF/static/js/main.2d38a90b.chunk.js.map",
     "runtime-main.js": "/EDSF/static/js/runtime-main.97ec5962.js",
     "runtime-main.js.map": "/EDSF/static/js/runtime-main.97ec5962.js.map",
     "static/js/2.46f4699a.chunk.js": "/EDSF/static/js/2.46f4699a.chunk.js",
     "static/js/2.46f4699a.chunk.js.map": "/EDSF/static/js/2.46f4699a.chunk.js.map",
     "index.html": "/EDSF/index.html",
-    "static/css/main.bbb70e15.chunk.css.map": "/EDSF/static/css/main.bbb70e15.chunk.css.map",
+    "static/css/main.66b253b7.chunk.css.map": "/EDSF/static/css/main.66b253b7.chunk.css.map",
     "static/js/2.46f4699a.chunk.js.LICENSE.txt": "/EDSF/static/js/2.46f4699a.chunk.js.LICENSE.txt",
     "static/media/(1)-DTW2019-Data-Teaching-Workshop-September-2019,-San-Diego.a35016f1.md": "/EDSF/static/media/(1)-DTW2019-Data-Teaching-Workshop-September-2019,-San-Diego.a35016f1.md",
     "static/media/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.2fa3f804.md": "/EDSF/static/media/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.2fa3f804.md",
@@ -20,13 +20,13 @@
     "static/media/EDSFhome.cdbaa0ce.md": "/EDSF/static/media/EDSFhome.cdbaa0ce.md",
     "static/media/MatesMasterLogo_COL.5261df8d.JPG": "/EDSF/static/media/MatesMasterLogo_COL.5261df8d.JPG",
     "static/media/App.css": "/EDSF/static/media/Roboto-Thin.c38fab23.ttf",
-    "static/media/Webinar-MATES-ED2MIT-2021-\"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry\".bac5cb12.md": "/EDSF/static/media/Webinar-MATES-ED2MIT-2021-\"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry\".bac5cb12.md",
+    "static/media/Webinar-MATES-ED2MIT-2021-\"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry\".a79f8f12.md": "/EDSF/static/media/Webinar-MATES-ED2MIT-2021-\"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry\".a79f8f12.md",
     "static/media/Webinar-MATES-ED2MIT-Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry.d50934b6.md": "/EDSF/static/media/Webinar-MATES-ED2MIT-Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry.d50934b6.md"
   },
   "entrypoints": [
     "static/js/runtime-main.97ec5962.js",
     "static/js/2.46f4699a.chunk.js",
-    "static/css/main.bbb70e15.chunk.css",
-    "static/js/main.16ab4868.chunk.js"
+    "static/css/main.66b253b7.chunk.css",
+    "static/js/main.2d38a90b.chunk.js"
   ]
 }

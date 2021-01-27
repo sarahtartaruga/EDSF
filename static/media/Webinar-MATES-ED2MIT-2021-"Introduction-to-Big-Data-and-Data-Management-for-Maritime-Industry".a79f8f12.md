@@ -20,6 +20,7 @@ Tuesday, January 26, 2021: 15:00-18:00pm CET
 * Demo and practice: working with cloud services and Hadoop cluster
 
 ### Materials
+* [Zoom recording](https://surfdrive.surf.nl/files/index.php/s/t5WLTsVcylKkHhh) divided into two parts (raw, not edited): Download and play in MediaPlayer or other MP4 player 
 * [Practice](https://drive.google.com/drive/folders/1YyDmRquZaekFvtIBA7MMt7ZjS-9H1wA8?usp=sharing) and [lecture](https://drive.google.com/drive/u/1/folders/1su2P7NqDF24MJKnfMqtREseK4iH5HWxY) material on Google Drive
 
 ## Tutorial 3: *SQL and NoSQL databases for Big Data processing. Hadoop Datawarehouse Hive and Dataflow scripting language Pig* 
@@ -31,7 +32,7 @@ Thursday, January 28, 2021: 15:00-18:00pm CET
 
 
 ## Tutorial 4: *Security and Compliance of Big Data platforms, Data protection* 
-Date: Either Friday, January 29, 2021: 15:00-18:00pm CET **or** Thursday, February 4, 2021: 15:00-18:00pm CET.
+Thursday, February 4, 2021: 15:00-18:00pm CET.
 ### Topics 
 
 ### Materials
