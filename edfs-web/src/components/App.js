@@ -92,7 +92,7 @@ class App extends Component {
         <div className="body">
           <Switch>
             <Route exact path="/">
-              <Redirect to="/" />
+              <Redirect to={this.categoriesPath[0]} />
             </Route>
             {this.createPages()}
           </Switch>
