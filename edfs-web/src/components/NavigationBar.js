@@ -42,7 +42,11 @@ function NavigationBar(props) {
   res.push(<nav className="nav-wrapper-top">{itemsTop}</nav>);
   res.push(<nav className="nav-wrapper-bottom">{itemsBottom}</nav>);
 
-  return <div className="nav-wrapper">{res}</div>;
+  return (
+    <span>
+      <div className="nav-wrapper">{res}</div>
+    </span>
+  );
 }
 
 export default NavigationBar;

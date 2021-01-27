@@ -21,8 +21,8 @@ a {
 }
 
 #logo-mates {
-  margin-top: 5%;
-  width: 20%;
+  margin-top: 3%;
+  width: 18%;
 }
 
 #logo-edison {
@@ -98,8 +98,8 @@ a {
   flex-direction: column;
   align-content: flex-start;
   width: 100%;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
   border-bottom-color: #617d8a;
   border-top-color: #617d8a;
   border-left-color: white;
@@ -108,15 +108,20 @@ a {
   border-width: 0.1pt;
 }
 
+.nav-wrapper-hide {
+  display: none;
+}
+
 .nav-wrapper a:hover {
   background-color:whitesmoke;
 }
+
 
 .nav-wrapper-top {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-bottom: 0.2%;
+  padding-bottom: 0.5%;
 }
 
 .nav-wrapper-bottom {
@@ -154,6 +159,105 @@ a {
 
 .App-link {
   color: #61dafb;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .nav-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .nav-wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-symbol {
+  display: none;
+}
+
+.nav-item {
+    font-size: calc(3px + 2vmin);
+    padding: 1%;
+}
+
+.nav-wrapper {
+  justify-content: center;
+}
+
+.home-body h1 {
+    font-size: calc(10px + 2vmin);
+}
+
+.home-body h2 {
+    font-size: calc(8px + 2vmin);
+}
+
+.home-body {
+  font-family: "Open Sans";
+  font-size: calc(4px + 2vmin);
+}
+
+#logo-edison {
+  width: 40%;
+}
+
+#logo-mates {
+  width: 40%;
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .nav-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .nav-wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-symbol {
+  display: none;
+}
+
+.nav-item {
+    font-size: calc(3px + 2vmin);
+    padding: 1%;
+}
+
+.nav-wrapper {
+  justify-content: center;
+}
+
+.home-body h1 {
+    font-size: calc(10px + 2vmin);
+}
+
+.home-body h2 {
+    font-size: calc(8px + 2vmin);
+}
+
+.home-body {
+  font-family: "Open Sans";
+  font-size: calc(4px + 2vmin);
+}
+#logo-edison {
+  width: 25%;
+}
+
+#logo-mates {
+  width: 30%;
+}
 }
 
 @font-face {
