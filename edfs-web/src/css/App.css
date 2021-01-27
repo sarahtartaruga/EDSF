@@ -113,9 +113,8 @@ a {
 }
 
 .nav-wrapper a:hover {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
-
 
 .nav-wrapper-top {
   display: flex;
@@ -143,7 +142,7 @@ a {
 }
 
 .nav-symbol {
-    font-size: calc(1px + 2vmin);
+  font-size: calc(1px + 2vmin);
   color: #617d8a;
 }
 
@@ -162,102 +161,98 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-
-
   .nav-wrapper-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .nav-wrapper-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.nav-symbol {
-  display: none;
-}
+  .nav-symbol {
+    display: none;
+  }
 
-.nav-item {
+  .nav-item {
     font-size: calc(3px + 2vmin);
     padding: 1%;
-}
+  }
 
-.nav-wrapper {
-  justify-content: center;
-}
+  .nav-wrapper {
+    justify-content: center;
+  }
 
-.home-body h1 {
+  .home-body h1 {
     font-size: calc(10px + 2vmin);
-}
+  }
 
-.home-body h2 {
+  .home-body h2 {
     font-size: calc(8px + 2vmin);
-}
+  }
 
-.home-body {
-  font-family: "Open Sans";
-  font-size: calc(4px + 2vmin);
-}
+  .home-body {
+    font-family: "Open Sans";
+    font-size: calc(4px + 2vmin);
+  }
 
-#logo-edison {
-  width: 40%;
-}
+  #logo-edison {
+    width: 40%;
+  }
 
-#logo-mates {
-  width: 40%;
-}
-
+  #logo-mates {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-
-    .nav-wrapper-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .nav-wrapper-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .nav-wrapper-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.nav-symbol {
-  display: none;
-}
+  .nav-symbol {
+    display: none;
+  }
 
-.nav-item {
+  .nav-item {
     font-size: calc(3px + 2vmin);
     padding: 1%;
-}
+  }
 
-.nav-wrapper {
-  justify-content: center;
-}
+  .nav-wrapper {
+    justify-content: center;
+  }
 
-.home-body h1 {
+  .home-body h1 {
     font-size: calc(10px + 2vmin);
-}
+  }
 
-.home-body h2 {
+  .home-body h2 {
     font-size: calc(8px + 2vmin);
-}
+  }
 
-.home-body {
-  font-family: "Open Sans";
-  font-size: calc(4px + 2vmin);
-}
-#logo-edison {
-  width: 25%;
-}
+  .home-body {
+    font-family: "Open Sans";
+    font-size: calc(4px + 2vmin);
+  }
+  #logo-edison {
+    width: 25%;
+  }
 
-#logo-mates {
-  width: 30%;
-}
+  #logo-mates {
+    width: 30%;
+  }
 }
 
 @font-face {

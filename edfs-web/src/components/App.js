@@ -30,7 +30,6 @@ class App extends Component {
       "EDFS Release 4 Workshop 2019",
       "EDFS Tutorial Summer 2019",
       "BDIT4DA Tutorial HPCS2019",
-
       "EDSF r3 Design Workshop 2018",
       "EDISON Workshop Denmark 2018",
       "EDFS Release 3 Workshop 2018",

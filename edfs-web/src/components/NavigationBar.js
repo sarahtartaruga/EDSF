@@ -12,7 +12,8 @@ function NavigationBar(props) {
   props.categories.forEach(function (item, i) {
     if (i < maxItemsPerRow) {
       itemsTop.push(
-        <NavLink exact
+        <NavLink
+          exact
           to={props.categories_path[i]}
           className="nav-item"
           activeClassName="active"
@@ -25,7 +26,8 @@ function NavigationBar(props) {
       }
     } else {
       itemsBottom.push(
-        <NavLink exact
+        <NavLink
+          exact
           to={props.categories_path[i]}
           className="nav-item"
           activeClassName="active"
@@ -42,11 +44,7 @@ function NavigationBar(props) {
   res.push(<nav className="nav-wrapper-top">{itemsTop}</nav>);
   res.push(<nav className="nav-wrapper-bottom">{itemsBottom}</nav>);
 
-  return (
-    <span>
-      <div className="nav-wrapper">{res}</div>
-    </span>
-  );
+  return <div className="nav-wrapper">{res}</div>;
 }
 
 export default NavigationBar;
