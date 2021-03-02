@@ -23,7 +23,7 @@ class App extends Component {
 
     this.categories = [
       "Home",
-      "MATES Webinar ED2MIT 2021",
+      "MATES ED2MIT 2021",
       "MATES Webinar ED2MIT 2020",
       "FAIR Competences for Higher Education 2020",
       "DTW 2019",
@@ -37,7 +37,7 @@ class App extends Component {
 
     this.categoriesPath = [
       "/home",
-      "/webinar-mates-2021",
+      "/mates-ed2mit-2021",
       "/webinar-mates-2020",
       "/fair-competences",
       "/dtw-2019",
