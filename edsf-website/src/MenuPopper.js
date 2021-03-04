@@ -105,7 +105,6 @@ export default function MenuPopper() {
           anchorEl={anchorRef.current}
           role={undefined}
           transition
-          disablePortal
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -135,16 +134,17 @@ export default function MenuPopper() {
                       label="Tutorials"
                       className={classes.rootTreeItem}
                     >
-                      <TreeItem nodeId="2" label="2019">
+                      {" "}
+                      <TreeItem nodeId="2" label="2021">
                         <MenuItemLink
-                          label="EDSF Tutorial Summer 2019: Data Science Competence and Education"
-                          to="/tutorials-2019-edsf-data-science-competence-and-education"
+                          label="MATES ED2MIT DMG 16, 18, 23 February"
                           onClick={handleClose}
+                          to="/tutorials-2021-mates-ed2mit-dmg-february"
                         />
                         <MenuItemLink
-                          label="BDIT4DA Tutorial HPCS2019"
-                          to="/tutorials-2019-bdit4da-hpcs"
+                          label="MATES ED2MIT BDIT4DA 20, 26, 28 January, 4 February"
                           onClick={handleClose}
+                          to="/tutorials-2021-mates-ed2mit-bdit4da-january-february"
                         />
                       </TreeItem>
                       <TreeItem nodeId="3" label="2020">
@@ -154,16 +154,16 @@ export default function MenuPopper() {
                           to="/tutorials-2020-mates-ed2mit-bdit4da"
                         />
                       </TreeItem>
-                      <TreeItem nodeId="4" label="2021">
+                      <TreeItem nodeId="4" label="2019">
                         <MenuItemLink
-                          label="MATES ED2MIT BDIT4DA 20 26 28 January 4 February"
+                          label="BDIT4DA Tutorial HPCS2019"
+                          to="/tutorials-2019-bdit4da-hpcs"
                           onClick={handleClose}
-                          to="/tutorials-2021-mates-ed2mit-bdit4da-january-february"
                         />
                         <MenuItemLink
-                          label="MATES ED2MIT DMG 16 18 23 February"
+                          label="EDSF Tutorial Summer 2019: Data Science Competence and Education"
+                          to="/tutorials-2019-edsf-data-science-competence-and-education"
                           onClick={handleClose}
-                          to="/tutorials-2021-mates-ed2mit-dmg-february"
                         />
                       </TreeItem>
                     </TreeItem>
@@ -173,40 +173,40 @@ export default function MenuPopper() {
                       label="Workshops"
                       className={classes.rootTreeItem}
                     >
-                      <TreeItem nodeId="5" label="2018">
+                      <TreeItem nodeId="5" label="2020">
                         <MenuItemLink
-                          label="EDISON Workshop 31 May Denmark"
+                          label="FAIR Competences for Higher Education Design Workshop 8, 9 October"
                           onClick={handleClose}
-                          to="/workshops-2018-edison-may-denmark"
-                        />
-                        <MenuItemLink
-                          label="EDSFr3 Design Workshop 18 19 July Agenda"
-                          onClick={handleClose}
-                          to="/workshops-2018-edsf-release3-july-agenda"
-                        />
-                        <MenuItemLink
-                          label="EDSFr3 Design Workshop 18 19 July (UvA)"
-                          onClick={handleClose}
-                          to="/workshops-2018-edsf-release3-july-uva"
+                          to="/workshops-2020-fair-competences-october"
                         />
                       </TreeItem>
                       <TreeItem nodeId="6" label="2019">
-                        <MenuItemLink
-                          label="DTW2019 Data Teaching Workshop September San Diego"
-                          onClick={handleClose}
-                          to="/workshops-2019-dtw-september-sandiego"
-                        />
                         <MenuItemLink
                           label="EDSFr 4 Design Workshop 20 November"
                           onClick={handleClose}
                           to="/workshops-2019-edsf-release4-november"
                         />
-                      </TreeItem>
-                      <TreeItem nodeId="7" label="2020">
                         <MenuItemLink
-                          label="FAIR Competences for Higher Education Design Workshop 8 9 October"
+                          label="DTW2019 Data Teaching Workshop September, San Diego"
                           onClick={handleClose}
-                          to="/workshops-2020-fair-competences-october"
+                          to="/workshops-2019-dtw-september-sandiego"
+                        />
+                      </TreeItem>
+                      <TreeItem nodeId="7" label="2018">
+                        <MenuItemLink
+                          label="EDSFr3 Design Workshop 18, 19 July UvA"
+                          onClick={handleClose}
+                          to="/workshops-2018-edsf-release3-july-uva"
+                        />
+                        <MenuItemLink
+                          label="EDSFr3 Design Workshop 18, 19 July Agenda"
+                          onClick={handleClose}
+                          to="/workshops-2018-edsf-release3-july-agenda"
+                        />
+                        <MenuItemLink
+                          label="EDISON Workshop 31 May, Denmark"
+                          onClick={handleClose}
+                          to="/workshops-2018-edison-may-denmark"
                         />
                       </TreeItem>
                     </TreeItem>

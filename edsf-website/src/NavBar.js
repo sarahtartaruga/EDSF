@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Icon from "@material-ui/core/Icon";
 import Typography from "@material-ui/core/Typography";
 import MenuPopper from "./MenuPopper";
-import logoEdison from "./edsf-head.ico";
+import logoEdison from "./img/edsf-head.ico";
 import Box from "@material-ui/core/Box";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -15,12 +15,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   iconImage: {
-    height: "70%",
-    width: "70%",
+    height: "60%",
+    width: "60%",
     paddingTop: "10%",
   },
   title: {
-    color: "#ffffff",
+    
   },
   titleBox: {
     textAlign: "center",
@@ -38,27 +38,27 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Box className={classes.menuPopperBox}>
-            <MenuPopper />
-            <Box className={classes.titleBox}>
-              <Typography variant="h5" className={classes.title}>
-                <RouterLink to="/" className={classes.routerLink}>
-                  EDISON Data Science Framework: Workshops and Tutorials
-                </RouterLink>
-              </Typography>
-            </Box>
+    <AppBar position="static">
+      <Toolbar>
+        <Box className={classes.menuPopperBox}>
+          <MenuPopper />
+          <Box className={classes.titleBox}>
+            <Typography variant="h5" className={classes.title} color="textSecondary">
+              <RouterLink to="/" className={classes.routerLink}>
+                EDISON Data Science Framework
+              </RouterLink>
+            </Typography>
           </Box>
+        </Box>
 
-          <Box className={classes.iconBox}>
+        <Box className={classes.iconBox}>
+          <RouterLink to="/about" className={classes.routerLink}>
             <Icon className={classes.iconRoot}>
               <img className={classes.iconImage} src={logoEdison} alt="logo" />
             </Icon>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </div>
+          </RouterLink>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
