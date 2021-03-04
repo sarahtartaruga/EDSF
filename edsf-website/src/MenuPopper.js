@@ -9,7 +9,9 @@ import TreeView from "@material-ui/lab/TreeView";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import TreeItem from "@material-ui/lab/TreeItem";
+import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,12 +21,39 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   rootTreeView: {
-    marginRight: theme.spacing(2),
+    margin: theme.spacing(2),
+    minWidth: "600px",
   },
   rootTreeItem: {
     padding: "10px",
   },
+  menuItem: {
+    padding: "0%",
+  },
 }));
+
+function MenuItemLink(props) {
+  const { to, label } = props;
+  const classes = useStyles();
+
+  const renderLink = React.useMemo(
+    () =>
+      React.forwardRef((itemProps, ref) => (
+        <RouterLink to={to} ref={ref} {...itemProps} />
+      )),
+    [to]
+  );
+
+  return (
+    <MenuItem
+      className={classes.menuItem}
+      component={renderLink}
+      onClick={props.onClick}
+    >
+      {label}
+    </MenuItem>
+  );
+}
 
 export default function MenuPopper() {
   const classes = useStyles();
@@ -95,86 +124,92 @@ export default function MenuPopper() {
                     defaultExpandIcon={<ChevronRightIcon />}
                   >
                     {/* About section   */}
-                    <TreeItem
-                      nodeId="1"
+                    <MenuItemLink
                       label="About"
-                      className={classes.rootTreeItem}
+                      to="/about"
+                      onClick={handleClose}
                     />
                     {/* Tutorial section   */}
                     <TreeItem
-                      nodeId="2"
+                      nodeId="1"
                       label="Tutorials"
                       className={classes.rootTreeItem}
                     >
-                      <TreeItem nodeId="3" label="2019">
-                        <TreeItem
-                          nodeId="4"
+                      <TreeItem nodeId="2" label="2019">
+                        <MenuItemLink
                           label="EDSF Tutorial Summer 2019: Data Science Competence and Education"
+                          to="/tutorials-2019-edsf-data-science-competence-and-education"
+                          onClick={handleClose}
                         />
-                        <TreeItem
-                          nodeId="5"
+                        <MenuItemLink
                           label="BDIT4DA Tutorial HPCS2019"
+                          to="/tutorials-2019-bdit4da-hpcs"
+                          onClick={handleClose}
                         />
                       </TreeItem>
-                      <TreeItem nodeId="6" label="2020">
-                        <TreeItem nodeId="7" label="MATES ED2MIT BDIT4DA" />
+                      <TreeItem nodeId="3" label="2020">
+                        <MenuItemLink
+                          label="MATES ED2MIT BDIT4DA"
+                          onClick={handleClose}
+                          to="/tutorials-2020-mates-ed2mit-bdit4da"
+                        />
                       </TreeItem>
-                      <TreeItem nodeId="8" label="2021">
-                        <TreeItem
-                          nodeId="9"
+                      <TreeItem nodeId="4" label="2021">
+                        <MenuItemLink
                           label="MATES ED2MIT BDIT4DA 20 26 28 January 4 February"
+                          onClick={handleClose}
+                          to="/tutorials-2021-mates-ed2mit-bdit4da-january-february"
                         />
-                        <TreeItem
-                          nodeId="10"
+                        <MenuItemLink
                           label="MATES ED2MIT DMG 16 18 23 February"
+                          onClick={handleClose}
+                          to="/tutorials-2021-mates-ed2mit-dmg-february"
                         />
                       </TreeItem>
                     </TreeItem>
                     {/* Workshop section   */}
                     <TreeItem
-                      nodeId="11"
+                      nodeId="4"
                       label="Workshops"
                       className={classes.rootTreeItem}
                     >
-                      <TreeItem nodeId="12" label="2018">
-                        <TreeItem
-                          nodeId="13"
+                      <TreeItem nodeId="5" label="2018">
+                        <MenuItemLink
                           label="EDISON Workshop 31 May Denmark"
+                          onClick={handleClose}
+                          to="/workshops-2018-edison-may-denmark"
                         />
-                        <TreeItem
-                          nodeId="14"
+                        <MenuItemLink
                           label="EDSFr3 Design Workshop 18 19 July Agenda"
+                          onClick={handleClose}
+                          to="/workshops-2018-edsf-release3-july-agenda"
                         />
-                        <TreeItem
-                          nodeId="15"
-                          label="EDSF Release 3 Design Workshop 18 19 July (UvA)"
-                        />
-                      </TreeItem>
-                      <TreeItem nodeId="16" label="2019">
-                        <TreeItem
-                          nodeId="17"
-                          label="DTW2019 Data Teaching Workshop September, San Diego"
-                        />
-                        <TreeItem
-                          nodeId="18"
-                          label="EDSF Release 4 Design Workshop 20 November"
+                        <MenuItemLink
+                          label="EDSFr3 Design Workshop 18 19 July (UvA)"
+                          onClick={handleClose}
+                          to="/workshops-2018-edsf-release3-july-uva"
                         />
                       </TreeItem>
-                      <TreeItem nodeId="19" label="2020">
-                        <TreeItem
-                          nodeId="20"
+                      <TreeItem nodeId="6" label="2019">
+                        <MenuItemLink
+                          label="DTW2019 Data Teaching Workshop September San Diego"
+                          onClick={handleClose}
+                          to="/workshops-2019-dtw-september-sandiego"
+                        />
+                        <MenuItemLink
+                          label="EDSFr 4 Design Workshop 20 November"
+                          onClick={handleClose}
+                          to="/workshops-2019-edsf-release4-november"
+                        />
+                      </TreeItem>
+                      <TreeItem nodeId="7" label="2020">
+                        <MenuItemLink
                           label="FAIR Competences for Higher Education Design Workshop 8 9 October"
+                          onClick={handleClose}
+                          to="/workshops-2020-fair-competences-october"
                         />
                       </TreeItem>
                     </TreeItem>
-                    {/* Release section   */}
-                    {/* <TreeItem
-                      label="EDSF Releases"
-                      className={classes.rootTreeItem}
-                    >
-                      <TreeItem label="3" />
-                      <TreeItem label="4" />
-                    </TreeItem> */}
                   </TreeView>
                 </ClickAwayListener>
               </Paper>

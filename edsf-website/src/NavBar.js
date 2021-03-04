@@ -4,11 +4,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Icon from "@material-ui/core/Icon";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import MenuPopper from "./MenuPopper";
 import logoEdison from "./edsf-head.ico";
 import Box from "@material-ui/core/Box";
+import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   menuPopperBox: {
@@ -20,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     width: "70%",
     paddingTop: "10%",
   },
-
   title: {
     color: "#ffffff",
   },
@@ -30,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: "auto",
   },
+  routerLink: {
+    textDecoration: "none",
+    color: "inherit",
+  }
 }));
 
 export default function ButtonAppBar() {
@@ -42,8 +44,10 @@ export default function ButtonAppBar() {
           <Box className={classes.menuPopperBox}>
             <MenuPopper />
             <Box className={classes.titleBox}>
-              <Typography variant="subtitle1" className={classes.title}>
-                EDISON Data Science Framework: Workshops and Tutorials
+              <Typography variant="h5" className={classes.title}>
+                <RouterLink to="/" className={classes.routerLink}>
+                  EDISON Data Science Framework: Workshops and Tutorials
+                </RouterLink>
               </Typography>
             </Box>
           </Box>
