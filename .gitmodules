@@ -1,6 +1,0 @@
-[submodule "edfs-web/src/EDSF.wiki"]
-	path = edfs-web/src/EDSF.wiki
-	url = https://github.com/EDISONcommunity/EDSF.wiki.git
-[submodule "edsf-website/EDSF.wiki"]
-	path = edsf-website/EDSF.wiki
-	url = https://github.com/EDISONcommunity/EDSF.wiki.git

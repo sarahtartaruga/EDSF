@@ -1,1 +1,0 @@
-EDISON Community: Supporting and developing the EDISON Data Science Framework (EDSF)
