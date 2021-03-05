@@ -274,7 +274,7 @@ export default function Home(props) {
       </Box>
       <Box className={classes.footerBox}>
         {/* <Box flexGrow="1" /> */}
-        <Typography variant="subtitle1">Partnered by</Typography>
+        <Typography variant="subtitle1">Partnered by </Typography>
         <Box className={classes.iconBox}>
           <Link
             target="_blank"

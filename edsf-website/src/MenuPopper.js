@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItem: {
     padding: "0%",
+    color: "#116FB4",
   },
 }));
 
