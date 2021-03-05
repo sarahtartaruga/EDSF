@@ -13,11 +13,7 @@ import workshop2019Dtw from "./EDSF.wiki/(1)-DTW2019-Data-Teaching-Workshop-Sept
 import workshop2019Edfsr4 from "./EDSF.wiki/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.md";
 import workshop2020Fair from "./EDSF.wiki/(5)-FAIR-Competences-for-Higher-Education-Design-Workshop-8-9-October-2020-Agenda-and-documents.md";
 import Box from "@material-ui/core/Box";
-import { sizing } from "@material-ui/system";
-
-
 import MarkDownComponent from "./MarkDownComponent";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

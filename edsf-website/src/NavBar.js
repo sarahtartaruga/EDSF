@@ -38,7 +38,7 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" >
       <Toolbar>
         <Box className={classes.menuPopperBox}>
           <MenuPopper />
