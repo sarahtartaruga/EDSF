@@ -11,7 +11,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Link as RouterLink } from "react-router-dom";
-import matesLogo from "../img/MatesMasterLogo_COL.JPG";
+import matesLogo from "./img/MatesMasterLogo_COL.JPG";
 
 const useStyles = makeStyles((theme) => ({
   rootBox: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     height: "5%",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   title: {
     margin: "1%",
@@ -58,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
   iconRoot: { marginLeft: "5%" },
   iconBox: {
     height: "100%",
-    
   },
   iconImage: {
     height: "100%",
@@ -74,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   yearActions: {
-    alignItems: "flex-start",
+    textAlign: "flex-start"
   },
 }));
 
@@ -106,7 +105,9 @@ export default function Home(props) {
                   primary='MATES ED2MIT "Industrial Data Spaces, Organisational Data Management and Governance for the Maritime Sector"'
                   secondary="16, 18, 23 February"
                 />
-              </ListItem>
+              </ListItem>{" "}
+            </CardActions>
+            <CardActions className={classes.yearActions}>
               <ListItem
                 button
                 component={RouterLink}
@@ -155,7 +156,7 @@ export default function Home(props) {
                 to="/tutorials-2019-bdit4da-hpcs"
               >
                 <ListItemText
-                  primary='MATES ED2MIT "Introduction to Big Data and Data Management for Maritime Industry"'
+                  primary="Big Data and Technologies for Data Analytics"
                   secondary="HPCS 2019"
                 />
               </ListItem>
@@ -274,7 +275,9 @@ export default function Home(props) {
       </Box>
       <Box className={classes.footerBox}>
         {/* <Box flexGrow="1" /> */}
-        <Typography variant="subtitle1">Partnered by </Typography>
+        <Typography variant="subtitle1" color="textSecondary">
+          Partnered by{" "}
+        </Typography>
         <Box className={classes.iconBox}>
           <Link
             target="_blank"

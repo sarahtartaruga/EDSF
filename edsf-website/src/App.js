@@ -1,20 +1,22 @@
 import NavBar from "./NavBar";
-import About from "./Other/About";
-import Home from "./Other/Home";
-import Tutorial2019Edsf from "./Tutorials/2019/EdsfTutorial";
-import Tutorial2019Bdit4dal from "./Tutorials/2019/Bdit4daTutorial";
-import Tutorial2020MatesBdit4da from "./Tutorials/2020/MatesEd2mitBdit4da";
-import Tutorial2021MatesDmg from "./Tutorials/2021/MatesEd2mitDmg";
-import Tutorial2021MatesBdit4da from "./Tutorials/2021/MatesEd2mitBdit4da";
-import Workshop2018Edison from "./Workshops/2018/EdisonMayDenmark";
-import Workshop2018Edsfr3Agenda from "./Workshops/2018/Edsfr3DesignAgenda";
-import Workshop2018Edsfr3Uva from "./Workshops/2018/Edsfr3DesignUva";
-import Workshop2019Dtw from "./Workshops/2019/DtwSanDiego";
-import Workshop2019Edfsr4 from "./Workshops/2019/Edfsr4DesignNovember";
-import Workshop2020Fair from "./Workshops/2020/FairCompetencesOctober";
+import Home from "./Home";
+import about from "./EDSF.wiki/EDSFhome.md";
+import tutorial2019Bdit4dal from "./EDSF.wiki/(4)-BDIT4DA-Tutorial-HPCS2019.md";
+import tutorial2019Edsf from "./EDSF.wiki/(3)-EDSF-Tutorial-Summer-2019:-Data-Science-Competence-and-Education.md";
+import tutorial2020MatesBdit4da from './EDSF.wiki/Webinar-MATES-ED2MIT-"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry".md';
+import tutorial2021MatesDmg from './EDSF.wiki/MATES-ED2MIT-2021-"Industrial-Data-Spaces,-Organisational-Data-Management-&-Governance-for-the-Maritime-Sector".md';
+import tutorial2021MatesBdit4da from './EDSF.wiki/MATES-ED2MIT-2021-"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry".md';
+import workshop2018Edison from "./EDSF.wiki/EDISON-Workshop-31-May-2018-Denmark.md";
+import workshop2018Edsfr3Agenda from "./EDSF.wiki/Agenda---EDSFr3-Design-Workshop-(18-19-July-2018).md";
+import workshop2018Edsfr3Uva from "./EDSF.wiki/EDSF-Release-3-Design-Workshop-18-19-July-2018-(UvA).md";
+import workshop2019Dtw from "./EDSF.wiki/(1)-DTW2019-Data-Teaching-Workshop-September-2019,-San-Diego.md";
+import workshop2019Edfsr4 from "./EDSF.wiki/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.md";
+import workshop2020Fair from "./EDSF.wiki/(5)-FAIR-Competences-for-Higher-Education-Design-Workshop-8-9-October-2020-Agenda-and-documents.md";
 import Box from "@material-ui/core/Box";
 import { sizing } from "@material-ui/system";
 
+
+import MarkDownComponent from "./MarkDownComponent";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -31,40 +33,40 @@ function App() {
               <Home />
             </Route>
             <Route path="/about">
-              <About />
+              <MarkDownComponent markdown={about} />
             </Route>
             <Route path="/tutorials-2019-edsf-data-science-competence-and-education">
-              <Tutorial2019Edsf />
+              <MarkDownComponent markdown={tutorial2019Edsf} />
             </Route>
             <Route path="/tutorials-2019-bdit4da-hpcs">
-              <Tutorial2019Bdit4dal />
+              <MarkDownComponent markdown={tutorial2019Bdit4dal} />
             </Route>
             <Route path="/tutorials-2020-mates-ed2mit-bdit4da">
-              <Tutorial2020MatesBdit4da />
+              <MarkDownComponent markdown={tutorial2020MatesBdit4da} />
             </Route>
             <Route path="/tutorials-2021-mates-ed2mit-bdit4da-january-february">
-              <Tutorial2021MatesBdit4da />
+              <MarkDownComponent markdown={tutorial2021MatesBdit4da} />
             </Route>
             <Route path="/tutorials-2021-mates-ed2mit-dmg-february">
-              <Tutorial2021MatesDmg />
+              <MarkDownComponent markdown={tutorial2021MatesDmg} />
             </Route>
             <Route path="/workshops-2018-edison-may-denmark">
-              <Workshop2018Edison />
+              <MarkDownComponent markdown={workshop2018Edison} />
             </Route>
             <Route path="/workshops-2018-edsf-release3-july-agenda">
-              <Workshop2018Edsfr3Agenda />
+              <MarkDownComponent markdown={workshop2018Edsfr3Agenda} />
             </Route>
             <Route path="/workshops-2018-edsf-release3-july-uva">
-              <Workshop2018Edsfr3Uva />
+              <MarkDownComponent markdown={workshop2018Edsfr3Uva} />
             </Route>
             <Route path="/workshops-2019-dtw-september-sandiego">
-              <Workshop2019Dtw />
+              <MarkDownComponent markdown={workshop2019Dtw} />
             </Route>
             <Route path="/workshops-2019-edsf-release4-november">
-              <Workshop2019Edfsr4 />
+              <MarkDownComponent markdown={workshop2019Edfsr4} />
             </Route>
             <Route path="/workshops-2020-fair-competences-october">
-              <Workshop2020Fair />
+              <MarkDownComponent markdown={workshop2020Fair} />
             </Route>
           </Switch>
         </Box>
