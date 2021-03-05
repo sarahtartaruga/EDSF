@@ -17,11 +17,11 @@ const styles = (theme) => ({
 class MarkDownComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { terms: "" };
+    this.state = { terms: "", markdown: this.props.markdown };
   }
 
   componentWillMount() {
-    fetch(this.props.markdown)
+    fetch(this.state.markdown)
       .then((response) => response.text())
       .then((text) => {
         this.setState({ terms: text });

@@ -15,12 +15,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   iconImage: {
-    height: "60%",
-    width: "60%",
-    paddingTop: "10%",
+    height: "100%",
   },
-  title: {
-    
+  iconRoot: {
+    height: "8vh",
+    width: "auto",
+  },
+  iconBox: {
+    flexDirection: "row",
+    display: "flex",
+    alignItems: "center"
   },
   titleBox: {
     textAlign: "center",
@@ -38,12 +42,16 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" >
+    <AppBar position="fixed">
       <Toolbar>
         <Box className={classes.menuPopperBox}>
           <MenuPopper />
           <Box className={classes.titleBox}>
-            <Typography variant="h5" className={classes.title} color="textSecondary">
+            <Typography
+              variant="h5"
+              className={classes.title}
+              color="textSecondary"
+            >
               <RouterLink to="/" className={classes.routerLink}>
                 EDISON Data Science Framework
               </RouterLink>
@@ -51,13 +59,18 @@ export default function ButtonAppBar() {
           </Box>
         </Box>
 
-        <Box className={classes.iconBox}>
-          <RouterLink to="/about" className={classes.routerLink}>
-            <Icon className={classes.iconRoot}>
-              <img className={classes.iconImage} src={logoEdison} alt="logo" />
-            </Icon>
-          </RouterLink>
-        </Box>
+        <RouterLink to="/about" className={classes.routerLink}>
+          <Box className={classes.iconBox}>
+              <Typography variant="subtitle1" color="textSecondary">About</Typography>
+              <Icon className={classes.iconRoot}>
+                <img
+                  className={classes.iconImage}
+                  src={logoEdison}
+                  alt="logo"
+                />
+              </Icon>
+          </Box>
+        </RouterLink>
       </Toolbar>
     </AppBar>
   );

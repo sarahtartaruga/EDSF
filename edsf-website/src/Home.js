@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     maxHeight: "90%",
   },
+  titleBox: {
+
+  },
   cardTutorials: {
     width: "32%",
     height: "90%",
@@ -82,10 +85,13 @@ export default function Home(props) {
 
   return (
     <Box className={classes.rootBox}>
+      <Box className={classes.titleBox}>
+        <Typography variant="h6">Welcome! Here you can find all information about the EDSF, offered trainings and workshops. </Typography>
+      </Box>
       <Box className={classes.cardBox}>
         <Card className={classes.cardTutorials}>
           <Typography variant="h6" className={classes.cardTitle}>
-            Tutorials
+            Tutorials and Trainings
           </Typography>
           <Box className={classes.yearBox}>
             <Typography color="textSecondary" className={classes.year}>
