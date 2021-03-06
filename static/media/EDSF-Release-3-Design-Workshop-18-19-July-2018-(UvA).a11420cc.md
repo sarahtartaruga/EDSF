@@ -1,4 +1,5 @@
-EDSF (EDISON Data Science Framework) design workshop 
+# EDSF (EDISON Data Science Framework) design workshop 
+
 18-19 July 2018 
 UvA, Science Park 904 Amsterdam
 
@@ -9,7 +10,7 @@ Provisional agenda is available [here](https://github.com/EDISONcommunity/EDSF/w
 The following timeline for the EDSF Release 3 is set to allow wider contribution:
 
 18-19 July 2018 EDSF Design workshop: review of comments, discussion of updates, defining documents structure. Updates on EDSF API development.
-In addition to current 4 documents to updated, at least one additional document on Use cases will be added. 
+In addition to current 4 documents to updated, at least one additional document on use cases will be added. 
 
 1 August 2018 - Pre-release EDSF Release 3 and starting 2 months comments period
 
@@ -17,14 +18,14 @@ In addition to current 4 documents to updated, at least one additional document 
 
 October 2018 - Publishing EDSF Release 3
 
-Please consider participation, despite short notice and send you comments, suggestions or your requirements to new update.
+Please consider participation, despite short notice and send your comments, suggestions or your requirements to new update.
 
 All working EDSF documents are available at EDISONcommunity github place
 https://github.com/EDISONcommunity/EDSF
 and EDSF wiki
 https://github.com/EDISONcommunity/EDSF/wiki/EDSFhome
 
-There is no formal registration, please send email to me <y.demchenko@uva.nl> if you intend to attend and optionally your suggestions on contribution.
+There is no formal registration, please send an email to me <y.demchenko@uva.nl> if you intend to attend and optionally your suggestions on contribution.
 
 Sponsoring projects:
 
