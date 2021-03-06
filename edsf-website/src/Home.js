@@ -8,7 +8,6 @@ import Link from "@material-ui/core/Link";
 import Icon from "@material-ui/core/Icon";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -34,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     height: "75%",
     width: "100%",
     flexGrow: "1",
-    backgroundColor: "#00ff00",
   },
   gridCardItem: {
     width: "100%",
@@ -79,14 +77,12 @@ const useStyles = makeStyles((theme) => ({
   },
   footerGridItemContact: {
     height: "100%",
-    backgroundColor: "#ff00ff",
-    border: "solid",
     display: "flex",
+    marginLeft: "2%"
   },
   footerGridItemMates: {
     height: "100%",
-    backgroundColor: "#ff0000",
-    border: "solid",
+    marginRight: "2%"
   },
   contactButton: {
     height: "100%",
@@ -133,6 +129,7 @@ export default function Home(props) {
       <Grid container direction="column" className={classes.gridContainer}>
         <Grid
           container
+          xs
           direction="column"
           className={classes.gridTitleContainer}
         >
@@ -142,7 +139,9 @@ export default function Home(props) {
             className={classes.gridTitleItem}
             style={{ paddingBottom: "0" }}
           >
-            <Typography variant="h6">Welcome to the EDSF homepage! </Typography>
+            <Typography variant="subtitle1">
+              Welcome to the EDSF homepage!{" "}
+            </Typography>
           </Grid>
           <Grid
             item
@@ -151,13 +150,13 @@ export default function Home(props) {
             style={{ paddingTop: "0" }}
           >
             <Typography variant="subtitle1">
-              Here you can find all information about the EDSF, offered
-              trainings and workshops
+              Here, you can find all information about the EDSF, offered
+              trainings and workshops.
             </Typography>
           </Grid>
         </Grid>
 
-        <Grid container direction="row" className={classes.gridCardContainer} >
+        <Grid container direction="row" className={classes.gridCardContainer}>
           <Grid item className={classes.gridCardItem} xs>
             <Card className={classes.cardTutorials}>
               <Typography variant="h6" className={classes.cardTitle}>
@@ -356,16 +355,13 @@ export default function Home(props) {
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="erasmusmates"
-                options={{}}
               />
             </Card>
           </Grid>
         </Grid>
-
-        <Grid container direction="row" className={classes.footerGrid} flexGrow="1">
+        <Grid container direction="row" className={classes.footerGrid}>
           <Grid item xs className={classes.footerGridItemContact}>
             <RouterLink to="/contact">
-              {/* <Button padding="0px" startIcon={<MailOutlineIcon />} variant="outlined"/> */}
               <IconButton className={classes.contactButton}>
                 <MailOutlineIcon />
               </IconButton>

@@ -211,7 +211,13 @@ export default function MenuPopper() {
                           to="/workshops-2018-edison-may-denmark"
                         />
                       </TreeItem>
-                    </TreeItem>
+                      </TreeItem>
+                    {/* Upcoming section   */}
+                    <MenuItemLink
+                      label="Upcoming Tutorials and Workshops"
+                      to="/upcoming"
+                      onClick={handleClose}
+                    />
                     {/* Contact section   */}
                     <MenuItemLink
                       label="Contact"

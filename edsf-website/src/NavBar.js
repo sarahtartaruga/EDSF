@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   routerLink: {
     textDecoration: "none",
     color: "inherit",
-  }
+  },
 }));
 
 export default function ButtonAppBar() {
@@ -49,7 +49,6 @@ export default function ButtonAppBar() {
           <Box className={classes.titleBox}>
             <Typography
               variant="h5"
-              className={classes.title}
               color="textSecondary"
             >
               <RouterLink to="/" className={classes.routerLink}>
