@@ -1,11 +1,12 @@
 import NavBar from "./NavBar";
 import Home from "./Home";
+import Contact from "./Contact";
 import about from "./EDSF.wiki/EDSFhome.md";
 import tutorial2019Bdit4dal from "./EDSF.wiki/(4)-BDIT4DA-Tutorial-HPCS2019.md";
 import tutorial2019Edsf from "./EDSF.wiki/(3)-EDSF-Tutorial-Summer-2019:-Data-Science-Competence-and-Education.md";
 import tutorial2020MatesBdit4da from './EDSF.wiki/Webinar-MATES-ED2MIT-"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry".md';
 import tutorial2021MatesDmg from './EDSF.wiki/MATES-ED2MIT-2021-"Industrial-Data-Spaces,-Organisational-Data-Management-&-Governance-for-the-Maritime-Sector".md';
-import tutorial2021MatesBdit4da from './EDSF.wiki/MATES-ED2MIT-2021-"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry".md';
+import tutorial2021MatesBdit4da from './EDSF.wiki/MATES-ED2MIT-2021-"Big-Data-Infrastructure-Technologies-for-Data-Analytics".md';
 import workshop2018Edison from "./EDSF.wiki/EDISON-Workshop-31-May-2018-Denmark.md";
 import workshop2018Edsfr3Agenda from "./EDSF.wiki/Agenda---EDSFr3-Design-Workshop-(18-19-July-2018).md";
 import workshop2018Edsfr3Uva from "./EDSF.wiki/EDSF-Release-3-Design-Workshop-18-19-July-2018-(UvA).md";
@@ -27,6 +28,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
             <Route path="/about">
               <MarkDownComponent markdown={about} key={0} />

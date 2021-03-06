@@ -6,6 +6,8 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Icon from "@material-ui/core/Icon";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import IconButton from "@material-ui/core/IconButton";
 import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -23,10 +25,11 @@ const useStyles = makeStyles((theme) => ({
   cardBox: {
     flexGrow: "1",
     display: "flex",
-    maxHeight: "90%",
+    maxHeight: "75%",
   },
   titleBox: {
-
+    marginTop: "2%",
+    maxHeight: "10%",
   },
   cardTutorials: {
     width: "32%",
@@ -52,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1%",
     height: "5%",
     display: "flex",
+    flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -61,6 +65,11 @@ const useStyles = makeStyles((theme) => ({
   iconRoot: { marginLeft: "5%" },
   iconBox: {
     height: "100%",
+    flexDirection: "row",
+    marginRight: "2%",
+  },
+  contactBox: {
+    marginLeft: "2%",
   },
   iconImage: {
     height: "100%",
@@ -76,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   yearActions: {
-    textAlign: "flex-start"
+    textAlign: "flex-start",
   },
 }));
 
@@ -86,12 +95,16 @@ export default function Home(props) {
   return (
     <Box className={classes.rootBox}>
       <Box className={classes.titleBox}>
-        <Typography variant="h6">Welcome! Here you can find all information about the EDSF, offered trainings and workshops. </Typography>
+        <Typography variant="h6">Welcome to the EDSF homepage! </Typography>
+        <Typography variant="subtitle1">
+          Here you can find all information about the EDSF, offered trainings
+          and workshops
+        </Typography>
       </Box>
       <Box className={classes.cardBox}>
         <Card className={classes.cardTutorials}>
           <Typography variant="h6" className={classes.cardTitle}>
-            Tutorials and Trainings
+            Trainings
           </Typography>
           <Box className={classes.yearBox}>
             <Typography color="textSecondary" className={classes.year}>
@@ -280,10 +293,19 @@ export default function Home(props) {
         </Card>
       </Box>
       <Box className={classes.footerBox}>
-        {/* <Box flexGrow="1" /> */}
-        <Typography variant="subtitle1" color="textSecondary">
-          Partnered by{" "}
-        </Typography>
+        <Box className={classes.contactBox}>
+          <RouterLink to="/contact">
+            <IconButton>
+              <MailOutlineIcon />
+            </IconButton>
+          </RouterLink>
+        </Box>
+        <Box flexGrow="1" />
+        <Box>
+          <Typography variant="subtitle1" color="textSecondary">
+            Partnered by
+          </Typography>
+        </Box>
         <Box className={classes.iconBox}>
           <Link
             target="_blank"

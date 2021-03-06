@@ -23,13 +23,14 @@ const useStyles = makeStyles((theme) => ({
   rootTreeView: {
     margin: theme.spacing(2),
     minWidth: "600px",
+    paddingBottom: "10px",
   },
   rootTreeItem: {
-    padding: "10px",
+    padding: "5px",
   },
   menuItem: {
     padding: "0%",
-    color: "#116FB4",
+    // color: "#116FB4",
   },
 }));
 
@@ -132,7 +133,7 @@ export default function MenuPopper() {
                     {/* Tutorial section   */}
                     <TreeItem
                       nodeId="1"
-                      label="Tutorials"
+                      label="Trainings"
                       className={classes.rootTreeItem}
                     >
                       {" "}
@@ -211,6 +212,12 @@ export default function MenuPopper() {
                         />
                       </TreeItem>
                     </TreeItem>
+                    {/* Contact section   */}
+                    <MenuItemLink
+                      label="Contact"
+                      to="/contact"
+                      onClick={handleClose}
+                    />
                   </TreeView>
                 </ClickAwayListener>
               </Paper>
