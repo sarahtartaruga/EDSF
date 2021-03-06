@@ -125,6 +125,12 @@ export default function MenuPopper() {
                     defaultCollapseIcon={<ExpandMoreIcon />}
                     defaultExpandIcon={<ChevronRightIcon />}
                   >
+                    {/* Home section   */}
+                    <MenuItemLink
+                      label="Home"
+                      to="/"
+                      onClick={handleClose}
+                    />
                     {/* About section   */}
                     <MenuItemLink
                       label="About"
@@ -212,7 +218,7 @@ export default function MenuPopper() {
                           to="/workshops-2018-edison-may-denmark"
                         />
                       </TreeItem>
-                      </TreeItem>
+                    </TreeItem>
                     {/* Upcoming section   */}
                     <MenuItemLink
                       label="Upcoming Tutorials and Workshops"
