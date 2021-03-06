@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import Upcoming from "./Upcoming";
 import about from "./EDSF.wiki/EDSFhome.md";
 import tutorial2019Bdit4dal from "./EDSF.wiki/(4)-BDIT4DA-Tutorial-HPCS2019.md";
-import tutorial2019Edsf from "./EDSF.wiki/(3)-EDSF-Tutorial-Summer-2019:-Data-Science-Competence-and-Education.md";
+import tutorial2019Edsf from "./EDSF.wiki/(3)-EDSF-Tutorial-Summer-2019-Data-Science-Competence-and-Education.md";
 import tutorial2020MatesBdit4da from './EDSF.wiki/Webinar-MATES-ED2MIT-"Introduction-to-Big-Data-and-Data-Management-for-Maritime-Industry".md';
 import tutorial2021MatesDmg from './EDSF.wiki/MATES-ED2MIT-2021-"Industrial-Data-Spaces,-Organisational-Data-Management-&-Governance-for-the-Maritime-Sector".md';
 import tutorial2021MatesBdit4da from './EDSF.wiki/MATES-ED2MIT-2021-"Big-Data-Infrastructure-Technologies-for-Data-Analytics".md';
