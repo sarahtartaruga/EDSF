@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EDSF/static/css/main.b8629051.chunk.css",
-    "main.js": "/EDSF/static/js/main.09e27a94.chunk.js",
-    "main.js.map": "/EDSF/static/js/main.09e27a94.chunk.js.map",
+    "main.js": "/EDSF/static/js/main.e40b4fdd.chunk.js",
+    "main.js.map": "/EDSF/static/js/main.e40b4fdd.chunk.js.map",
     "runtime-main.js": "/EDSF/static/js/runtime-main.be6d99b2.js",
     "runtime-main.js.map": "/EDSF/static/js/runtime-main.be6d99b2.js.map",
     "static/js/2.5993d4dd.chunk.js": "/EDSF/static/js/2.5993d4dd.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/2.5993d4dd.chunk.js.LICENSE.txt": "/EDSF/static/js/2.5993d4dd.chunk.js.LICENSE.txt",
     "static/media/(1)-DTW2019-Data-Teaching-Workshop-September-2019,-San-Diego.a35016f1.md": "/EDSF/static/media/(1)-DTW2019-Data-Teaching-Workshop-September-2019,-San-Diego.a35016f1.md",
     "static/media/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.74761463.md": "/EDSF/static/media/(2)-EDSF-Release-4-Design-Workshop-20-November-2019.74761463.md",
-    "static/media/(3)-EDSF-Tutorial-Summer-2019:-Data-Science-Competence-and-Education.9eafb1b2.md": "/EDSF/static/media/(3)-EDSF-Tutorial-Summer-2019:-Data-Science-Competence-and-Education.9eafb1b2.md",
+    "static/media/(3)-EDSF-Tutorial-Summer-2019-Data-Science-Competence-and-Education.9eafb1b2.md": "/EDSF/static/media/(3)-EDSF-Tutorial-Summer-2019-Data-Science-Competence-and-Education.9eafb1b2.md",
     "static/media/(4)-BDIT4DA-Tutorial-HPCS2019.23325cd4.md": "/EDSF/static/media/(4)-BDIT4DA-Tutorial-HPCS2019.23325cd4.md",
     "static/media/(5)-FAIR-Competences-for-Higher-Education-Design-Workshop-8-9-October-2020-Agenda-and-documents.d648a437.md": "/EDSF/static/media/(5)-FAIR-Competences-for-Higher-Education-Design-Workshop-8-9-October-2020-Agenda-and-documents.d648a437.md",
     "static/media/Agenda---EDSFr3-Design-Workshop-(18-19-July-2018).da6e9098.md": "/EDSF/static/media/Agenda---EDSFr3-Design-Workshop-(18-19-July-2018).da6e9098.md",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.be6d99b2.js",
     "static/js/2.5993d4dd.chunk.js",
     "static/css/main.b8629051.chunk.css",
-    "static/js/main.09e27a94.chunk.js"
+    "static/js/main.e40b4fdd.chunk.js"
   ]
 }
