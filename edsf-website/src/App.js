@@ -26,7 +26,7 @@ function App() {
         </Box>
         <Box height="90vh">
           <Switch>
-            <Route exact path="/">
+            <Route path="/">
               <Home />
             </Route>
             <Route path="/contact">
