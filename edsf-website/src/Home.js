@@ -15,7 +15,9 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { Link as RouterLink } from "react-router-dom";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Grid from "@material-ui/core/Grid";
-import matesLogo from "./img/MatesMasterLogo_COL.JPG";
+import matesLogo from "./img/MatesMasterLogo_COL.png";
+import uvaLogo from "./img/uva.png";
+import backgroundImg from "./img/background2.png";
 
 const useStyles = makeStyles((theme) => ({
   rootBox: {
@@ -23,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     textAlign: "center",
+    backgroundImage: `url(${backgroundImg})`,
+    backgroundAttachment: "fixed",
+    backgroundSize: "cover",
   },
   gridContainer: {
     height: "100%",
@@ -30,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   gridTitleContainer: {},
   gridTitleItem: { padding: theme.spacing(2) },
   gridCardContainer: {
-    height: "75%",
+    height: "70%",
     width: "100%",
     flexGrow: "1",
   },
@@ -49,14 +54,14 @@ const useStyles = makeStyles((theme) => ({
   },
   cardTutorials: {
     height: "100%",
-    backgroundColor: "#116FB4",
+    backgroundColor: "rgba(17, 111, 180,0.9)",
     color: "#ffffff",
     margin: "auto",
     overflowY: "scroll",
   },
   cardWorkshops: {
     height: "100%",
-    backgroundColor: "#245E76",
+    backgroundColor: "rgba(36, 94, 118,0.9)",
     color: "#ffffff",
     margin: "auto",
     overflowY: "scroll",
@@ -74,15 +79,16 @@ const useStyles = makeStyles((theme) => ({
   footerGrid: {
     height: "5%",
     width: "100%",
+    marginBottom: "1%"
   },
   footerGridItemContact: {
     height: "100%",
     display: "flex",
-    marginLeft: "2%"
+    marginLeft: "2%",
   },
   footerGridItemMates: {
     height: "100%",
-    marginRight: "2%"
+    marginRight: "2%",
   },
   contactButton: {
     height: "100%",
@@ -119,6 +125,11 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     marginLeft: "1%",
   },
+  footerSpan: {
+    backgroundColor: "#63B4A7",
+    height: "100px",
+    width: "100%",
+  },
 }));
 
 export default function Home(props) {
@@ -139,9 +150,7 @@ export default function Home(props) {
             className={classes.gridTitleItem}
             style={{ paddingBottom: "0" }}
           >
-            <Typography variant="subtitle1">
-              Welcome to the EDSF homepage!{" "}
-            </Typography>
+            <Typography variant="h4">Welcome to the EDSF homepage</Typography>
           </Grid>
           <Grid
             item
@@ -150,15 +159,15 @@ export default function Home(props) {
             style={{ paddingTop: "0" }}
           >
             <Typography variant="subtitle1">
-              Here, you can find all information about the EDSF, offered
-              trainings and workshops.
+              Here, you can find information about the EDISON Data Science
+              Framework, offered trainings and workshops
             </Typography>
           </Grid>
         </Grid>
 
         <Grid container direction="row" className={classes.gridCardContainer}>
           <Grid item className={classes.gridCardItem} xs>
-            <Card className={classes.cardTutorials}>
+            <Card className={classes.cardTutorials} variant="outlined">
               <Typography variant="h6" className={classes.cardTitle}>
                 Trainings
               </Typography>
@@ -250,7 +259,7 @@ export default function Home(props) {
             </Card>
           </Grid>
           <Grid item className={classes.gridCardItem} xs>
-            <Card className={classes.cardWorkshops}>
+            <Card className={classes.cardWorkshops} variant="outlined">
               <Typography variant="h6" className={classes.cardTitle}>
                 Workshops
               </Typography>
@@ -351,7 +360,7 @@ export default function Home(props) {
             </Card>
           </Grid>
           <Grid item className={classes.gridCardItem} xs>
-            <Card className={classes.cardTwitter}>
+            <Card className={classes.cardTwitter} variant="outlined">
               <TwitterTimelineEmbed
                 sourceType="profile"
                 screenName="erasmusmates"
@@ -388,13 +397,32 @@ export default function Home(props) {
                     <img
                       className={classes.iconImage}
                       src={matesLogo}
-                      alt="logo"
+                      alt="matesLogo"
+                    />
+                  </Icon>
+                </Link>
+              </Box>
+              <Box className={classes.logoBox}>
+                <Link
+                  target="_blank"
+                  href="https://www.uva.nl/en"
+                  rel="noopener"
+                >
+                  <Icon
+                    className={classes.iconRoot}
+                    href="https://www.uva.nl/en"
+                  >
+                    <img
+                      className={classes.iconImage}
+                      src={uvaLogo}
+                      alt="uvaLogo"
                     />
                   </Icon>
                 </Link>
               </Box>
             </Box>
           </Grid>
+          <Box className={classes.footerSpan} />
         </Grid>
       </Grid>
     </Box>

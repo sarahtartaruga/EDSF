@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/EDSF">
+          <Route exact path="/EDSF">
             <Home />
           </Route>
           <Route path="/contact">

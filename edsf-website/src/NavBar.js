@@ -52,7 +52,7 @@ export default function ButtonAppBar() {
               color="textSecondary"
             >
               <RouterLink to="/" className={classes.routerLink}>
-                EDISON Data Science Framework
+                {/* EDISON Data Science Framework */}
               </RouterLink>
             </Typography>
           </Box>
@@ -60,7 +60,7 @@ export default function ButtonAppBar() {
 
         <RouterLink to="/about" className={classes.routerLink}>
           <Box className={classes.iconBox}>
-              <Typography variant="subtitle1" color="textSecondary">About</Typography>
+              <Typography variant="subtitle1" color="textSecondary">About EDSF</Typography>
               <Icon className={classes.iconRoot}>
                 <img
                   className={classes.iconImage}
