@@ -54,14 +54,14 @@ const useStyles = makeStyles((theme) => ({
   },
   cardTutorials: {
     height: "100%",
-    backgroundColor: "rgba(17, 111, 180,0.9)",
+    backgroundColor: "rgba(17, 111, 180,0.97)",
     color: "#ffffff",
     margin: "auto",
     overflowY: "scroll",
   },
   cardWorkshops: {
     height: "100%",
-    backgroundColor: "rgba(36, 94, 118,0.9)",
+    backgroundColor: "rgba(36, 94, 118,0.97)",
     color: "#ffffff",
     margin: "auto",
     overflowY: "scroll",
