@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EDSF/static/css/main.b8629051.chunk.css",
-    "main.js": "/EDSF/static/js/main.a113f383.chunk.js",
-    "main.js.map": "/EDSF/static/js/main.a113f383.chunk.js.map",
+    "main.js": "/EDSF/static/js/main.985262db.chunk.js",
+    "main.js.map": "/EDSF/static/js/main.985262db.chunk.js.map",
     "runtime-main.js": "/EDSF/static/js/runtime-main.be6d99b2.js",
     "runtime-main.js.map": "/EDSF/static/js/runtime-main.be6d99b2.js.map",
     "static/js/2.5993d4dd.chunk.js": "/EDSF/static/js/2.5993d4dd.chunk.js",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.be6d99b2.js",
     "static/js/2.5993d4dd.chunk.js",
     "static/css/main.b8629051.chunk.css",
-    "static/js/main.a113f383.chunk.js"
+    "static/js/main.985262db.chunk.js"
   ]
 }
